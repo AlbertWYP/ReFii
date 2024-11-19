@@ -22,3 +22,5 @@ sh test.sh
 例如，在数据集`DiFF`上进行`T2I`域内鉴别，我们需要按照如下步骤进行：首先，我们需要按照创建`Training`中的方法创建`DiFF_T2I`子数据集，并且将`train.sh`中的`DATASETS`以及`DATASETS_TEST`均修改为`DiFF_T2I`，在训练完成后，我们将在路径`data/exp/DiFF_T2I/ckpt/model_epoch_best.pth`获得其最优模型；在测试阶段，我们需要按照`Evaluation`的方法进行域内测试，其中`test.sh`中`CKPT`路径为`data/exp/DiFF_T2I/ckpt/model_epoch_best.pth`，`DATASETS_TEST`为`DiFF_T2I`。
 ## Cross-domain discrimination
 例如，在数据集`DiFF`上进行`T2I`训练`I2I`的跨域鉴别，我们需要按照如下步骤进行：训练过程同`Intra-domain discrimination`；在测试阶段，我们需要将`test.sh`中`DATASETS_TEST`修改为`DiFF_I2I`。
+## Robustness experiment
+鲁棒性测试我们主要针对`JPEG压缩`和`高斯模糊`进行实验。在`/utils/config.py`中参数`jpg_qual`和`jpg_prob`分别控制JPEG压缩程度以及JPEG压缩概率，`blur_sig`和`blur_prob`分别控制高斯模糊强度以及高斯模糊概率，我们只需要修改这几个参数，并进行测试步骤即可完成鲁棒性实验。
