@@ -1,7 +1,7 @@
 #!/bin/bash
 ### make sure that you have modified the EXP_NAME, DATASETS, DATASETS_TEST
 eval "$(conda shell.bash hook)"
-conda activate dire
+conda activate refii
 EXP_NAME="diff_fe_sigma_2"
 DATASETS="diff_fe"
 DATASETS_TEST="diff_fe"
