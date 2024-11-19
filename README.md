@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/ecd060cc-128e-405c-a3d7-8cb16233ec2f)# ReFii
+# ReFii
 ## Requirements
 ```bash
 conda create -n refii python=3.9
@@ -7,4 +7,4 @@ pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 -f https://download.py
 pip install -r requirements.txt
 ```
 ## Datasets
-我们用到了[DiFF](https://github.com/xaCheng1996/DiFF)以及[DiffusionForensics](https://pan.baidu.com/share/init?surl=Rdzc7l8P0RrJft0cW0a4Gg)数据集
+我们用到了[DiFF](https://github.com/xaCheng1996/DiFF)以及[DiffusionForensics](https://pan.baidu.com/share/init?surl=Rdzc7l8P0RrJft0cW0a4Gg)数据集，数据集下载链接已经给出，其中[DiffusionForensics]数据集密码为[dire]
