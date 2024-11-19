@@ -23,4 +23,4 @@ sh test.sh
 ## Cross-domain discrimination
 例如，在数据集`DiFF`上进行`T2I`训练`I2I`的跨域鉴别，我们需要按照如下步骤进行：训练过程同`Intra-domain discrimination`；在测试阶段，我们需要将`test.sh`中`DATASETS_TEST`修改为`DiFF_I2I`。
 ## Robustness experiment
-鲁棒性测试我们主要针对`JPEG压缩`和`高斯模糊`进行实验。在`/utils/config.py`中参数`jpg_qual`和`jpg_prob`分别控制JPEG压缩程度以及JPEG压缩概率，`blur_sig`和`blur_prob`分别控制高斯模糊强度以及高斯模糊概率，我们只需要修改这几个参数，并进行测试步骤即可完成鲁棒性实验。
+鲁棒性测试我们主要针对`JPEG压缩`和`高斯模糊`进行实验。在`/utils/config.py`中参数`jpg_qual`和`jpg_prob`分别控制JPEG压缩程度以及JPEG压缩概率，`blur_sig`和`blur_prob`分别控制高斯模糊强度以及高斯模糊概率，我们只需要修改这几个参数，并进行`测试`步骤即可完成鲁棒性实验。
