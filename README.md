@@ -7,7 +7,4 @@ pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 -f https://download.py
 pip install -r requirements.txt
 ```
 ## Datasets
-我们用到了以及DiffusionForensics数据集
-“`
-[DiFF](https://github.com/xaCheng1996/DiFF)
-“`
+我们用到了[DiFF](https://github.com/xaCheng1996/DiFF)以及[DiffusionForensics](https://pan.baidu.com/share/init?surl=Rdzc7l8P0RrJft0cW0a4Gg)数据集
